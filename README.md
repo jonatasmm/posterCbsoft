@@ -1,4 +1,0 @@
-posterCbsoft
-============
-
-Poster CBSoft
