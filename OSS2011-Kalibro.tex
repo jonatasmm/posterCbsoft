@@ -73,10 +73,10 @@
 \end{block}
 
 %-------------------------------------------------------------------------------
-\vfill
+
 \begin{block}{Testes Automatizados}
 
-	A automação de testes é uma prática ágil, eficaz e de baixo custo para melhorar a qualidade do software. Foram utilizadas neste estudo práticas de TDD (\textit{Test-Driven Develepment}) e BDD (\textit({Behavior Driven Development}). Segue os testes utilizados:
+	Foram utilizadas neste estudo práticas de TDD (\textit{Test-Driven Develepment}) e BDD (\textit({Behavior Driven Development}). Segue os testes utilizados:
 
 	\begin{itemize}
 		\item \textbf{Testes de unidade:} testes de correção responsável pelos menores trechos de código com um comportamento;
@@ -92,7 +92,7 @@
 
 
 %-------------------------------------------------------------------------------
-\vfill
+
 \begin{block}{Usabilidade}
 
 	A usabilidade é definida como o fator que assegura que um produto é fácil de usar, eficiente e agradável.
@@ -101,50 +101,18 @@
 
 		\item  \textbf{Design centrado no usuário:} filosofia baseada nas necessidades e interesses dos usuário, com ênfase em fazer produtos usáveis e inteligíveis.
 
-
-		\item Um problema encontrado em softwares livres é a pouca atenção aos aspectos de usabilidade, o que pode ser causado pela sua própria comunidade que apenas enfatiza na criação, melhoria e teste do código fonte.
-
-	%\begin{figure}
-	%  \begin{center}
-	%    \includegraphics[scale=1.5]{figures/interactions.png}
-	%    \caption{kalibro interation diagram.}
-	%    \label{fig:background:free-software-repository}
-	%  \end{center}
-	%\end{figure}
-
 	\end{itemize}
 
 	A integração entre os processos de usabilidade e métodos ágeis é esperada visto que tanto os métodos ágeis como a usabilidade tem em comum características que tem foco nas necessidades dos usuários.
 
+
+
 \end{block}
 
-\vfill
-        
-
-}
-\end{minipage}
-\end{beamercolorbox}
-\end{column}
-% ---------------------------------------------------------%
-% end the column
-
-% ---------------------------------------------------------%
-% Set up a column 
-\begin{column}{.49\textwidth}
-  \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-    \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
-      \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
-        % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
-        % ---------------------------------------------------------%
-        % fill each column with content
-
-        \begin{block}{Estudo}
-
-			\begin{itemize}
+\begin{block}{Estudo - Parte de Usabilidade}
+	\begin{itemize}
         		\item Foi planejado um estudo de usabilidade para analisar a interação dos usuários com o portal Participa.Br a fim de avaliar a qualidade em uso, que será aplicado na segunda fase deste estudo. 
 
-
-				\item Assim, foram definidas questões sobre o que é preciso saber de forma a apoiá-la a entender se o objetivo foi alcançado, e para cada questão foram definidas as métricas relacionadas na Tabela I:
 
 				\begin{table}
 					\begin{center}
@@ -164,7 +132,7 @@
 				\end{table}
     		\end{itemize} 
 
-			Elencamos algumas técnicas para identificação dos usuários:
+    		Elencamos algumas técnicas para identificação dos usuários:
 
         	\begin{itemize}
         		\item \textbf{Dados Estatísticos : }Possibilita identificar algumas informações sobre o perfil dos usuários, coletadas de base de dados, redes sociais, etc.
@@ -173,6 +141,7 @@
 
         		\item \textbf{Identificação de Personas: } Persona são personagens fictícios criados com base em dados reais.
        		\end{itemize}
+
 
        		Elencamos também algumas técnicas para avaliar a usabilidade do portal:
        
@@ -194,49 +163,106 @@
 			\label{tabela-tecnicas}
 			\end{table}
 
-        	Os instrumentos de coletas de informações utilizados são dois questionários para medir a satisfação do usuário:
+			Os instrumentos de coletas de informações utilizados são dois questionários para medir a satisfação do usuário:
+
+        	\begin{itemize}
+        		\item \textit{After-Scenario Questionnaire} (ASQ) : destinado ao uso em testes de usabilidade baseados em cenários, possuindo 3 itens:
+
+        		\begin{itemize}
+        			\item Facilidade de conclusão da tarefa.
+
+        			\item Tempo necessário para completar uma tarefa.
+
+        			\item Adequação das instruções ou materiais de apoio fornecidos.
+        		\end{itemize}
+
+        		\item \textit{Post-Study System Usabiliy Questionnaire} (PSSUQ): avaliação de satisfação geral, utilidade do sistema, qualidade da interface e qualidade da  informação. 
+        	\end{itemize}
+
+\end{block}
+
+        
+
+}
+\end{minipage}
+\end{beamercolorbox}
+\end{column}
+% ---------------------------------------------------------%
+% end the column
+
+% ---------------------------------------------------------%
+% Set up a column 
+\begin{column}{.49\textwidth}
+  \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+    \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
+      \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
+        % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
+        % ---------------------------------------------------------%
+        % fill each column with content
+
+        \begin{block}{Estudo - Parte de Testes}
+
+			
         	
+        	O estudo sobre testes teve enfoque na rede Comunidade UnB, sendo desenvolvidos alguns \textit{plugins}.	Assim foi desenvolvido um \textit{plugin} no noosfero, que efetuasse  restrições de acesso, utilizando o protocolo de autenticação da UnB, com o LDAP (\textit{Lightweight Directory Access Protocol}).
+
+			Com os testes unitário e funcionais do plugin alcançamos os seguintes dados:
+			\begin{table}[h]
+				\begin{tabular}{| p{25cm} |l|}
+				\hline
+				Quantidade de testes executados & 96 testes \\ \hline
+				Quantiadde de falhas obtidas & 0 falhas   \\ \hline
+				Taxa de cobertura de código & 88.94 \\ \hline
+				\end{tabular}
+				\caption{Testes do plugin Ldap-UnB}
+        	\label{tabela-ldap}
+			\end{table}
+
+			Outro \textit{plugin} (plugin de Envio de TCC) desenvolvido para o Noosfero, porém em uma aplicação diferente, o Portal UnB Gama, é responsável por criar uma atribuição de trabalhos, chamada de \textit{work assignment}. Essa atribuição possui algumas funcionalidades específicas como possibilitar que os usuários envolvidos sejam notificados via \textit{email} sobre a submissão de um trabalho. Segue os dados sobre a execução dos testes:
+
+			\begin{table}[h]
+				\begin{tabular}{| p{25cm} |l|}
+				\hline
+				Quantidade de testes executados & 28 testes \\ \hline
+				Quantiadde de falhas obtidas & 0 falhas   \\ \hline
+				Taxa de cobertura de código & 73.30 \\ \hline
+				\end{tabular}
+				\caption{Testes do plugin Envio de TCC}
+        	\label{tabela-tcc}
+			\end{table}
+
+			Testes de aceitação do plugin de envio de TCC, para verificar o comportamento da funcionalidade:
+
+
+		\begin{table}[h]
+				\begin{tabular}{| p{25cm} |l|}
+				\hline
+				Quantidade de cenários executados & 6 cenários \\ \hline
+				Quantiadde de passos executados & 130 passos   \\ \hline
+				Quantiadde de falhas obtidas & 0 falhas \\ \hline
+				\end{tabular}
+				\caption{Testes de aceitação do plugin Envio de TCC}
+        	\label{tabela-tcc2}
+			\end{table}
 		\end{block}             
-	\vfill
-\begin{block}{Kalibro Plug-in for Mezuro networking}
-          \begin{itemize}
+	
+\begin{block}{Considerações Finais}
 
-		\item A social network to track source code metrics.
+	Com desenvolvimento baseado em testes e a avaliação de usabilidade voltados para o Noosfero, chegamos a algumas hipóteses que serão respondidas na segunda fase do trabalho.
 
-		\begin{itemize}
+	\begin{itemize}
+	\item Como inserir os princípios de usabilidade no processo desenvolvimento empírico de software?
+	
+	\item É possível alcançar melhores resultados em testes de usabilidade utilizando práticas do BDD e TDD?
+	\end{itemize}
 
-			\item This environment promotes
-			an open and collaborative networking to analyze hundreds of thousands
-			software projects, specially Free Software, through an automated tracking
-			of their source code repositories.
-		\end{itemize}
+	Nesse contexto, a ideia do estudo inicial sobre projeto Participa.Br foi conhecer como funciona algumas técnicas de avaliação da usabilidade.
+	
+	Aplicamos as técnicas de usabilidade pesquisadas durante o trabalho, em um processo baseado em BDD e TDD, a fim de verificar problemas de usabilidade, e satisfação e uso em um estudo de caso da plataforma Noosfero. 
 
-
-		\item Mezuro is a powerful environment to enhance Kalibro features,
-		using the social network potential.
-		
-		\begin{itemize}
-			\item The idea is based on the fact that people improve their writing skills when they
-			read good books and papers. Similarly, software engineers can increase the
-			quality of their source codes reviewing good and clean codes.
-
-			\item a developer can find through source code metrics software projects implemented in the same context 				and language, they can compare their source code characteristics and know other related projects.
-	          \end{itemize}
-
-		\item Users just need to give a source code repository URL.
-
-		\item Users can access the source code analysis report
-		from an asynchronous way, i.e. when they wish or need.
-
-		\item The history of source code metric values and analysis are recorded.  
-
-		\item All free and public project analysis are available to any user.
-
-		\item Any user can suggest metric threshold configurations and share them
-		on the Mezuro network.
-
-          \end{itemize}
-        \end{block}
+	Assim, a segunda fase deste trabalho de graduação será aplicar o estudo realizado, a fim de verificar a influência de testes automatizados na usabilidade do sistema e possui previsão de entrega em dezembro de 2014. 
+         
+\end{block}
 \vfill
       }
       % ---------------------------------------------------------%
