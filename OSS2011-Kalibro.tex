@@ -138,20 +138,65 @@
         % ---------------------------------------------------------%
         % fill each column with content
 
-        \begin{block}{Kalibro Architecture}
+        \begin{block}{Estudo}
 
-	\begin{itemize}
-          	\item \textbf{KalibroCore} is the heart of Kalibro Metrics. It contains
-		all logic, including database access, metric collector tool interaction,
-		statistics computation and compound metric scripts evaluation. It includes a
-		Java abstract class (KalibroFacade) to access all its functionality.
+			\begin{itemize}
+        		\item Foi planejado um estudo de usabilidade para analisar a interação dos usuários com o portal Participa.Br a fim de avaliar a qualidade em uso, que será aplicado na segunda fase deste estudo. 
 
-		\item \textbf{KalibroService} is a Web Service interface for using Kalibro.
 
-        \end{itemize}
-          	
-        \end{block}
-             
+				\item Assim, foram definidas questões sobre o que é preciso saber de forma a apoiá-la a entender se o objetivo foi alcançado, e para cada questão foram definidas as métricas relacionadas na Tabela I:
+
+				\begin{table}
+					\begin{center}
+					\caption{Questões de Pesquisa}
+					\label{table:maintrack:questoes}
+					\begin{tabular}{lll}
+		  				\hline
+						Questões & Métricas & Diretrizes para iterpretação \\ 
+		  				\hline
+						Qual o perfil do usuário? &  Perfil &   Análise de Dados Estatísticos\\
+		  				Qual o grau de satisfação do usuário? &  Situação &   Escore da satisfação\\
+		  				Tempo gasto para realizar as tarefas &  Duração &   Tempo gasto \\ 
+		 
+		  	 			\hline
+					\end{tabular}
+					\end{center}
+				\end{table}
+    		\end{itemize} 
+
+			Elencamos algumas técnicas para identificação dos usuários:
+
+        	\begin{itemize}
+        		\item \textbf{Dados Estatísticos : }Possibilita identificar algumas informações sobre o perfil dos usuários, coletadas de base de dados, redes sociais, etc.
+
+	        	\item \textbf{Questionário de identificação de perfil dos usuários: } Pesquisa que busca compreender quem são, qual o conhecimento e como utilizam o sistema.
+
+        		\item \textbf{Identificação de Personas: } Persona são personagens fictícios criados com base em dados reais.
+       		\end{itemize}
+
+       		Elencamos também algumas técnicas para avaliar a usabilidade do portal:
+       
+       		
+			\begin{table}[h]
+			
+				\begin{tabular}{|l| p{25cm} |}
+				\hline
+				Técnica & Descrição \\ \hline
+				Observar Usuários & Um observador irá registrar o tempo 
+				gasto por cada participante para concluir o estudo de caso, 
+				avaliar a ferramenta e se necessitou de alguma ajuda    \\ \hline
+				Perguntar aos usuários & Os questionários ASQ e PSSUQ 
+				de satisfação dos usuários será utilizado 
+				para coletar as opiniões dos participantes.\\ \hline
+				\end{tabular}
+				\caption{Técnicas de avaliação para os testes com usuários}
+			
+			\label{tabela-tecnicas}
+			\end{table}
+
+        	Os instrumentos de coletas de informações utilizados são dois questionários para medir a satisfação do usuário:
+        	
+		\end{block}             
 	\vfill
 \begin{block}{Kalibro Plug-in for Mezuro networking}
           \begin{itemize}
